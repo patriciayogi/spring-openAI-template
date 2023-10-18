@@ -1,0 +1,8 @@
+
+management.server.port: 9001
+#management.endpoints.web.exposure.include=*
+
+openai:
+  baseUrl: https://api.openai.com/v1
+  apiKey: [API_KEY]
+  #apiKey https://platform.openai.com/account/api-keys

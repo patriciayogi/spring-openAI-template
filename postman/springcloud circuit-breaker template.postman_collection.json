@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "e762fa1d-15b8-4825-b7cf-3d43849eb5c7",
+		"name": "springcloud circuit-breaker template(openai client)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/actuator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/generate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/generate?query=What is Record in java? please provide an example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"generate"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "What is Record in java? please provide an example"
+						},
+						{
+							"key": "model",
+							"value": "gpt-3.5-turbo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
