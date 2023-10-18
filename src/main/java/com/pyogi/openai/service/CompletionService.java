@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 public class CompletionService {
 
     private static final Logger LOG = LoggerFactory.getLogger(CompletionService.class);
-    private final static String COMPLETION_URL = "/completions1111";
+    private final static String COMPLETION_URL = "/completions";
 
     private final WebClient webClient;
 
