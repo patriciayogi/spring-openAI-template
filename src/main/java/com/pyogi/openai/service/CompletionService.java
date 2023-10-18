@@ -13,10 +13,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
-
 @Service
 public class CompletionService {
-    private final static String COMPLETION_URL = "/completions";
+
+    private static final Logger LOG = LoggerFactory.getLogger(CompletionService.class);
+    private final static String COMPLETION_URL = "/completions1111";
 
     private final WebClient webClient;
 
@@ -38,6 +39,9 @@ public class CompletionService {
                 .uri(COMPLETION_URL)
                 .bodyValue(request)
                 .retrieve()
-                .bodyToMono(CompletionResponse.class));
+                .bodyToMono(CompletionResponse.class), throwable -> {
+            LOG.warn("Error making request to open ai", throwable);
+            return Mono.just( new CompletionResponse(null, "open ai might be down", null, model, null));
+        });
     }
 }
