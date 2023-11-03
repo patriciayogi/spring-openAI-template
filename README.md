@@ -15,5 +15,9 @@ Sample RESTful web service application:
   - Java 21 
   - Postman
 
+## Steps:
   - Update in application.yml
     apiKey: [(https://platform.openai.com/account/api-keys)https://platform.openai.com/account/api-keys]
+  - Run the Application
+
+![image](https://github.com/patriciayogi/spring-openAI-template/assets/18370368/0048d1cd-dcf8-4227-95e4-a4826cae11f8)
