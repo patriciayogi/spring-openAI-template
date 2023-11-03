@@ -14,4 +14,6 @@ Sample RESTful web service application:
 ## What You Need
   - Java 21 
   - Postman
-  
+
+  - Update in application.yml
+    apiKey: [API_KEY]
