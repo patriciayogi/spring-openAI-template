@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pyogi</groupId>
-	<artifactId>spring-cloud-circuit-breaker-template</artifactId>
+	<artifactId>spring-openai-template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-circuit-breaker-template</name>
+	<name>spring-openai-template</name>
 	<description>Sample project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
