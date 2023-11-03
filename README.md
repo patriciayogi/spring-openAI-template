@@ -1,4 +1,4 @@
-# spring-cloud-circuit-breaker-template
+# spring-openAI-template
 
 This sample makes a simple completion request to OpenAI
 
@@ -16,4 +16,4 @@ Sample RESTful web service application:
   - Postman
 
   - Update in application.yml
-    apiKey: [API_KEY]
+    apiKey: [(https://platform.openai.com/account/api-keys)https://platform.openai.com/account/api-keys]
